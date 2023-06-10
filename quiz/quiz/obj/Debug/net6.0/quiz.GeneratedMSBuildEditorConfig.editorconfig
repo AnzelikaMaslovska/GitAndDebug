@@ -9,29 +9,29 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = quiz
 build_property.RootNamespace = quiz
-build_property.ProjectDir = C:\Users\zuk12\Desktop\AStudies\WebProgrammesana\quiz\quiz\
+build_property.ProjectDir = C:\Users\zuk12\Desktop\AStudies\progriki\GitAndDebugAssigment\quiz\quiz\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\zuk12\Desktop\AStudies\WebProgrammesana\quiz\quiz
+build_property.MSBuildProjectDirectory = C:\Users\zuk12\Desktop\AStudies\progriki\GitAndDebugAssigment\quiz\quiz
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/zuk12/Desktop/AStudies/WebProgrammesana/quiz/quiz/Views/Home/Index.cshtml]
+[C:/Users/zuk12/Desktop/AStudies/progriki/GitAndDebugAssigment/quiz/quiz/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zuk12/Desktop/AStudies/WebProgrammesana/quiz/quiz/Views/Home/Results.cshtml]
+[C:/Users/zuk12/Desktop/AStudies/progriki/GitAndDebugAssigment/quiz/quiz/Views/Home/Results.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXN1bHRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zuk12/Desktop/AStudies/WebProgrammesana/quiz/quiz/Views/Shared/_Layout.cshtml]
+[C:/Users/zuk12/Desktop/AStudies/progriki/GitAndDebugAssigment/quiz/quiz/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zuk12/Desktop/AStudies/WebProgrammesana/quiz/quiz/Views/_ViewImports.cshtml]
+[C:/Users/zuk12/Desktop/AStudies/progriki/GitAndDebugAssigment/quiz/quiz/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zuk12/Desktop/AStudies/WebProgrammesana/quiz/quiz/Views/_ViewStart.cshtml]
+[C:/Users/zuk12/Desktop/AStudies/progriki/GitAndDebugAssigment/quiz/quiz/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
