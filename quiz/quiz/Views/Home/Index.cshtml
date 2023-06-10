@@ -1,0 +1,70 @@
+﻿@model Quiz
+@{
+    int index = 0;
+}
+@{
+       @if (!Model.IsQuizStarted)
+       {
+           <form asp-controller="Home" asp-action="Start" method="post" class="w-100 h-100">
+                <div class="d-flex align-items-center justify-content-center w-100 h-100">
+                        <button type="submit" class="btn btn-primary p-3">START QUIZ</button>
+                </div>
+           </form>
+       } else {
+           <form asp-controller="Home" asp-action="AnsweredAndLoadNextQuestion" method="post" class="w-100 h-100 d-flex flex-column justify-content-between">
+                <h2>@Model.Questions[Model.ActiveQuestionIndex].Text</h2>
+                @foreach (Answer answer in @Model.Questions[Model.ActiveQuestionIndex].Answers)
+               {
+                   <div class="form-check">
+                       <input asp-for="@Model.ReceivedAnswer" value="@answer.Text" type="radio" class="form-check-input"> @answer.Text<br/>
+                   </div>
+               }
+               @if (Model.LastQuestionUnansweredleft() && !Model.Questions[Model.ActiveQuestionIndex].DidUserAnswered) {
+                    <button type="submit" class="btn btn-primary text-center p-2 m-2">Save answer and see results!</button>
+               }
+               else {
+                    <button type="submit" class="btn btn-primary text-center p-2 m-2">Save answer</button>
+               }
+            </form>
+       }
+}
+@section Header {
+    <div class="text-center">
+        <h1>@Model.Name</h1>
+        <p>@Model.Description</p>
+        @if (Model.IsQuizStarted){
+            <p>@Model.AnsweredQuestionCount()/@Model.Questions.Count</p>
+        }
+    </div>
+}
+@section Navigation {
+    <h3 class="text-center">Questions</h3>
+    <div class="d-flex align-items-center justify-content-center w-100 h-100">
+        <div style="display: grid; grid-template-columns: 24% 24% 24% 24%; color: white;">
+               @foreach (Question question in Model.Questions)
+               {
+                   if (index==Model.ActiveQuestionIndex)
+                   {
+                        <a asp-route-id="@index" asp-action="SelectQuestion" class="btn btn-dark p-3 ms-1 me-1 mt-1">@(index+1)</a>
+                   } else if(question.DidUserAnswered) {
+                        <a asp-route-id="@index" asp-action="SelectQuestion" class="btn btn-success p-3 ms-1 me-1 mt-1">@(index+1)</a>
+                   } else {
+                        <a asp-route-id="@index" asp-action="SelectQuestion" class="btn btn-secondary p-3 ms-1 me-1 mt-1">@(index+1)</a>
+                   }
+                   index++;
+               }
+        </div>
+    </div>
+ 
+}
+@section Footer {
+    <div class="d-flex align-items-end flex-column h-100">
+        <form asp-controller="Home">
+            <button asp-action="Results" type="submit" class="btn btn-danger">
+                End quiz
+            </button>
+      </form>
+      <div class="mt-auto p-2">Anželika Maslovska</div>
+        
+    </div>
+}
